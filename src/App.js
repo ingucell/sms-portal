@@ -2,7 +2,7 @@ import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Sidebar from "./pages/global/Sidebar";
 import Topbar from './pages/global/Topbar'
-import CSelector from "./pages/global";
+import Landing from "./pages/Landing";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -14,12 +14,12 @@ function App() {
              <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <div className="app">
-                    <Sidebar />
+                    {/* <Sidebar /> */}
                 
                     <main className="content">
                             <Topbar />
                               <Routes>
-                                <Route />
+                                <Route path="/" element={<Landing />}/>
                               </Routes>
                     </main>
                     </div>

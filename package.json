@@ -17,6 +17,7 @@
     "material-ui-flags": "^1.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-gif-player": "^0.4.2",
     "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",

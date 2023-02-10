@@ -23,7 +23,7 @@ const Topbar = () => {
   return (
     <Box
      display="flex" 
-     justifyContent="space-between" p={2}
+     justifyContent="space-between" p={1.5}
      backgroundColor = {colors.black[900]}
      >
 
@@ -46,7 +46,7 @@ const Topbar = () => {
       {/* ICONS */}
        <Box 
       display="flex"
-      margin= "0px 55%"
+      margin= "0px 75%"
       paddingRight = "-20rem"
       >
         {/* theme mode button */}
@@ -95,7 +95,7 @@ const Topbar = () => {
                   Mathias Lawson
                 </Typography>
                 <Typography variant="h6" color={colors.black[300]} width='max-content' marginLeft='7px'>
-                 Email Messenger
+                 Software Messenger
                 </Typography>
               </Box>
       </Box>
