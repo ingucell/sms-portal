@@ -1,8 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import BarChart from "../../components/Charts/BarChart";
-import Pie from '../../components/Charts/PieChart'
-import ProgressCircle from "../../components/Charts/ProgressCircle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import PageHeadings from "../../components/pageHeadings";
 import PieChart from "../../components/Charts/PieChart";
@@ -32,8 +30,7 @@ const SMS = () => {
           gridTemplateColumns: iphoneSE ? "repeat(8, 1fr)" : "repeat(12, 1fr)", 
         }}
       >
-       
-
+  
         {/* Pie Chart */}
         <Box
           gridColumn="span 4"
@@ -49,6 +46,7 @@ const SMS = () => {
           <PieChart />
         
         </Box>
+        {/* BarChart */}
         <Box
           gridColumn="span 4"
           gridRow="span 2"

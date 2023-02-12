@@ -44,7 +44,7 @@ const Sidebar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
+  const [selected, setSelected] = useState("SMS");
 
   return (
     <Box
@@ -111,13 +111,17 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+
+           <Item
               title="Dashboard"
               to="/dashboard"
               icon={<SpeedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+
+            
+            
 
    {/*Messages  */}
             <SubMenu title='Messages'
@@ -326,10 +330,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-         
-
-
-          
+                
           </Box>
         </Menu>
       </ProSidebar>
