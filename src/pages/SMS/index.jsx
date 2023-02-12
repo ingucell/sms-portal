@@ -1,9 +1,11 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import BarChart from "../../components/Charts/BarChart";
+import Pie from '../../components/Charts/PieChart'
 import ProgressCircle from "../../components/Charts/ProgressCircle";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import PageHeadings from "../../components/pageHeadings";
+import PieChart from "../../components/Charts/PieChart";
 
 const SMS = () => {
   const theme = useTheme();
@@ -32,7 +34,7 @@ const SMS = () => {
       >
        
 
-        {/* ROW 3 */}
+        {/* Pie Chart */}
         <Box
           gridColumn="span 4"
           gridRow="span 4"
@@ -41,25 +43,11 @@ const SMS = () => {
         >
         
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            Recent SMS Campaings
           </Typography>
-          <Box
-            display="flex"
-            flexWrap="wrap"
-            flexDirection="column"
-            alignItems="center"
-            mt="25px"
-          >
-            <ProgressCircle size="125" />
-            <Typography
-              variant="h5"
-              color={colors.green[500]}
-              sx={{ mt: "15px" }}
-            >
-              $48,352 revenue generated
-            </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
-          </Box>
+
+          <PieChart />
+        
         </Box>
         <Box
           gridColumn="span 4"
@@ -71,7 +59,7 @@ const SMS = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+          Billing Summary  
           </Typography>
           <Box height="37rem" mt="-20px">
             <BarChart isDashboard={true} />
