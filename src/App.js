@@ -14,7 +14,7 @@ function App() {
              <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <div className="app">
-                    {/* <Sidebar /> */}
+                    <Sidebar /> 
                 
                     <main className="content">
                             <Topbar />

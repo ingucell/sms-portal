@@ -10,6 +10,7 @@ import main from './main.gif'
 import Grid from '../../components/Grid';
 import Grid2 from '../../components/Grid2';
 import ThreeBox from './ThreeBox';
+import Footer from './Footer';
 var GifPlayer = require('react-gif-player');
 
 
@@ -86,6 +87,8 @@ const Landing = () =>{
       >
            <Grid2 />
       </Box>
+
+      {/* <Footer /> */}
     
      
         </>

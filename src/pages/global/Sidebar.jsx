@@ -7,13 +7,18 @@ import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-
+import SmsIcon from '@mui/icons-material/Sms';
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import BusinessOutlinedIcon from '@mui/icons-material/BusinessOutlined';
 import PendingActionsOutlinedIcon from '@mui/icons-material/PendingActionsOutlined';
-
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
+import SpeedIcon from '@mui/icons-material/Speed';
+import PersonIcon from '@mui/icons-material/Person';
+import MessageIcon from '@mui/icons-material/Message';
+import QueryStatsIcon from '@mui/icons-material/QueryStats';
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 //import profilepic from  './user.jpg'
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -79,7 +84,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.black[500]}>
-                  PROFILE
+                  MATHIAS SCRIPTED
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -117,9 +122,9 @@ const Sidebar = () => {
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
-              title="Dashboard"
-              to="/"
-              icon={<HomeOutlinedIcon />}
+              title="SMS"
+              to="/sms"
+              icon={<SmsIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -132,46 +137,60 @@ const Sidebar = () => {
               Business Name
             </Typography> */}
             <Item
-              title="Business"
-              to="/business"
-              icon={<BusinessOutlinedIcon />}
+              title="Voice"
+              to="/voice"
+              icon={<LocalPhoneIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Appointments"
-              to="/appointments"
-              icon={<PendingActionsOutlinedIcon />}
+              title="Dashboard"
+              to="/dashboard"
+              icon={<SpeedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Messages"
+              to="/messages"
+              icon={<EmailOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+
+            <Item
+              title="Groups"
+              to="/groups"
+              icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Contacts"
               to="/contacts"
-              icon={<PeopleOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-
-            <Item
-              title="Email Template"
-              to="/emailtemplate"
-              icon={<EmailOutlinedIcon />}
+              icon={<PersonIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlinedIcon />}
+              title="Send Message"
+              to="/sendmessage"
+              icon={<MessageIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Settings"
-              to="/settings"
-              icon={<SettingsOutlinedIcon />}
+              title="Stats & Reporting"
+              to="/statesandreports"
+              icon={<QueryStatsIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Help"
+              to="/help"
+              icon={<QuestionMarkIcon />}
               selected={selected}
               setSelected={setSelected}
             />
