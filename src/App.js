@@ -3,6 +3,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Sidebar from "./pages/global/Sidebar";
 import Topbar from './pages/global/Topbar'
 import Landing from "./pages/Landing";
+import SMS from "./pages/SMS";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                             <Topbar />
                               <Routes>
                                 <Route path="/" element={<Landing />}/>
+                                <Route path="/sms" element={<SMS />}/>
                               </Routes>
                     </main>
                     </div>
