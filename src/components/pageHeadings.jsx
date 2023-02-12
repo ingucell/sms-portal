@@ -6,7 +6,7 @@ const PageHeadings = ({ title, subtitle }) => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box mb="30px"
-     m= "0px 30px"
+     m= "0px 10px"
     >
       <Typography
         variant="h2"
@@ -21,8 +21,12 @@ const PageHeadings = ({ title, subtitle }) => {
       <Typography 
       variant="h4" 
       color={colors.black[100]}
-       fontWeight='light' width='45%'
-        marginTop='4px'>
+      fontWeight='light'
+      width="max-content"
+      marginTop='4px'
+      paddingBottom="30px"
+      >
+           
         {subtitle}
       </Typography>
     </Box>
