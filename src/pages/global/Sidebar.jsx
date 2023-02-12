@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
+import { ProSidebar, Menu, MenuItem, SubMenu} from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
@@ -19,6 +19,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 //import profilepic from  './user.jpg'
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -93,33 +94,6 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          {!isCollapsed && (
-            <Box mb="80px">
-              {/* <Box display="flex" justifyContent="center" alignItems="center">
-                <img
-                  alt="profile-user"
-                  width="100px"
-                  height="100px"
-                //   src={profilepic}
-                  style={{ cursor: "pointer", borderRadius: "50%" }}
-                />
-              </Box> */}
-              {/* <Box textAlign="center">
-                <Typography
-                  variant="h2"
-                  color={colors.black[100]}
-                  fontWeight="bold"
-                  sx={{ m: "10px 0 0 0" }}
-                >
-                  Mathias Lawson
-                </Typography>
-                <Typography variant="h5" color={colors.black[100]}>
-                  MERN STACK DEV
-                </Typography>
-              </Box> */}
-            </Box>
-          )}
-
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="SMS"
@@ -129,13 +103,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            {/* <Typography
-              variant="h6"
-              color={colors.green[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            >
-              Business Name
-            </Typography> */}
+
             <Item
               title="Voice"
               to="/voice"
@@ -150,43 +118,207 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+
+   {/*Messages  */}
+            <SubMenu title='Messages'
+             style={{color: `${colors.green[100]}`}}
+             icon={<EmailOutlinedIcon />}
+             >
+                 <Item
+              title="Create message"
+              to="/createmessage"
+              selected={selected}
+              setSelected={setSelected}
+                />
+
             <Item
-              title="Messages"
-              to="/messages"
-              icon={<EmailOutlinedIcon />}
+              title="View message"
+              to="/viewmessage"
               selected={selected}
               setSelected={setSelected}
             />
 
+      
+            </SubMenu>
+
+
+           
+{/* Groups */}
+            <SubMenu title='Groups' 
+            style={{color: `${colors.green[100]}`}}
+            icon={<PeopleOutlinedIcon />}
+            >
 
             <Item
               title="Groups"
               to="/groups"
-              icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
+
             <Item
-              title="Contacts"
-              to="/contacts"
-              icon={<PersonIcon />}
+              title="Create Groups"
+              to="/creategroups"
               selected={selected}
               setSelected={setSelected}
             />
+      
+            </SubMenu>
+
+{/* Contacts */}
+            <SubMenu title='Contacts' 
+            style={{color: `${colors.green[100]}`}}
+            icon={<PersonIcon />}
+            >
+
             <Item
-              title="Send Message"
-              to="/sendmessage"
-              icon={<MessageIcon />}
+              title="New Contact"
+              to="/newcontact"
               selected={selected}
               setSelected={setSelected}
             />
+
             <Item
-              title="Stats & Reporting"
-              to="/statesandreports"
-              icon={<QueryStatsIcon />}
+              title="Import from Excel"
+              to="/importfromexcel"
               selected={selected}
               setSelected={setSelected}
             />
+
+            <Item
+              title="Contact List"
+              to="/contactlist"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+           <Item
+              title="Export Contacts"
+              to="/exportcontacts"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            </SubMenu>
+
+
+{/* Send Message */}
+            <SubMenu title='Send Message'
+             style={{color: `${colors.green[100]}`}}
+             icon={<MessageIcon />}
+             >
+                        
+            <Item
+              title="Group Messaging"
+              to="/groupmessaging"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Quick SMS"
+              to="/quicksms"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Excel Messaging"
+              to="/excelmessaging"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Register Sender ID"
+              to="/registersendid"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Sender ID List"
+              to="/senderidlist"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+         <Item
+              title="Scheduled"
+              to="/scheduled"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            </SubMenu>
+
+
+{/* Stats & Reporting */}
+            <SubMenu 
+            title='Stats & Reporting'
+            style={{color: `${colors.green[100]}`}}
+            icon={<QueryStatsIcon />}
+            >
+                        
+             <Item
+                 title="Graphical Report"
+                 to="/graphicalreport"
+                 selected={selected}
+                 setSelected={setSelected}
+             />
+
+
+           <Item
+              title="Message Type Sent"
+              to="/messagetypesent"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Sender Name"
+              to="/sendername"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+           <Item
+              title="SMS sent"
+              to="/smssent"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Campaigns"
+              to="/campaigns"
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+          <Item
+              title="Top Up History"
+              to="/touphistory"
+              selected={selected}
+              setSelected={setSelected}
+            />
+             <Item
+              title="Payments"
+              to="/payment"
+              selected={selected}
+              setSelected={setSelected}
+            />
+             <Item
+              title="Delivery Reports"
+              to="/deliveryreports"
+              selected={selected}
+              setSelected={setSelected}
+            />
+            
+            
+             </SubMenu>
+
+
+    
             <Item
               title="Help"
               to="/help"
@@ -194,6 +326,9 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+         
+
+
           
           </Box>
         </Menu>
