@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import PageHeadings from "../../components/pageHeadings";
 import PieChart from "../../components/Charts/PieChart";
 
-const Dashboard = () => {
+const Voice = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -15,7 +15,7 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <PageHeadings title="Dashboard" subtitle="Review all your stats here!" />
+        <PageHeadings title="Voice" subtitle="View all your voice calls here!" />
 
       </Box>
 
@@ -69,4 +69,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Voice;

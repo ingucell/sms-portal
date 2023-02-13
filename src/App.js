@@ -4,6 +4,8 @@ import Sidebar from "./pages/global/Sidebar";
 import Topbar from './pages/global/Topbar'
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
+import CreateMessage from './pages/Messages/createMessages'
+import Voice from "./pages/Voice";
 import SMS from "./pages/SMS";
 import {Routes, Route } from 'react-router-dom'
 
@@ -16,7 +18,7 @@ function App() {
              <ThemeProvider theme={theme}>
                     <CssBaseline />
                     <div className="app">
-                    {/* <Sidebar />  */}
+                    <Sidebar /> 
                 
                     <main className="content">
                             <Topbar />
@@ -24,6 +26,8 @@ function App() {
                                 <Route path="/" element={<Landing />}/>
                                 <Route path="/sms" element={<SMS />}/>
                                 <Route path="/dashboard" element={<Dashboard />}/>
+                                <Route path="/voice" element={<Voice />}/>
+                                <Route path="/createmessage" element={<CreateMessage />}/>
                               </Routes>
                     </main>
                     </div>
