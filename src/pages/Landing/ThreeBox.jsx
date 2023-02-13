@@ -1,12 +1,15 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
-import { Typography } from '@mui/material';
+import { colors, Typography } from '@mui/material';
 import { makeStyles } from '@material-ui/core/styles';
 import PeopleIcon from '@material-ui/icons/People';
 import GroupWorkIcon from '@material-ui/icons/GroupWork';
 import HomeIcon from '@material-ui/icons/Home';
 import { width } from '@mui/system';
 import Header from '../../components/Header';
+import { useTheme } from "@mui/material";
+
+import { ColorModeContext, tokens } from "../../theme";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     padding:'2rem',
     color:"black",
     borderRadius: '1rem',
-    boxShadow: '0px 10px 60px #d2b7f3'
+    boxShadow: '0px 10px 60px #9fe0cf'
    
   },
   middleBox: {
@@ -47,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     padding:'2rem',
     color:"black",
     borderRadius: '1rem',
-    boxShadow: '0px 10px 60px #d2b7f3'
+    boxShadow: '0px 10px 60px #9fe0cf '
   },
   icon: {
     marginBottom: theme.spacing(2),
@@ -65,7 +68,7 @@ const BoxItem = ({ icon, children }) => {
       <PeopleIcon className={classes.icon}/>
      <Typography
        variant='h2'
-       color='#8b3af8'
+       color= {colors.green[600]}
        fontWeight='bold'
        textAlign='center'
      >
@@ -90,7 +93,7 @@ const MiddleBox = ({ children }) => {
       <GroupWorkIcon className={classes.icon} />
       <Typography
        variant='h2'
-       color='#8b3af8'
+       color= {colors.green[600]}
        fontWeight='bold'
        textAlign='center'
      >
@@ -109,6 +112,9 @@ const MiddleBox = ({ children }) => {
 
 const ThreeBox = () => {
   const classes = useStyles();
+  const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+
 
   return (
     <>

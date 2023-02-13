@@ -2,11 +2,10 @@ import React, {useState} from 'react'
 import { Box, useTheme, IconButton, Typography } from "@mui/material";
 import Header from '../../components/Header';
 import { ColorModeContext, tokens } from "../../theme";
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+
 import Button1 from '../../components/Button';
 import banner from './banner1.png'
-import main from './main.gif'
+import main from './main.png'
 import Grid from '../../components/Grid';
 import Grid2 from '../../components/Grid2';
 import ThreeBox from './ThreeBox';
@@ -26,7 +25,7 @@ const Landing = () =>{
         <>
          <img src={banner} height='100%' width='100%' style={{position: "static", zIndex: "1", top:"-5rem"}}/>
         <Box
-        display='flex'
+        display='grid'
         flexWrap='wrap'
         marginTop='30rem'
         >
@@ -34,6 +33,7 @@ const Landing = () =>{
        
         <Box
          position='relative'
+         
          zIndex='1'
          top='-70rem'
          left='45px'
@@ -50,11 +50,12 @@ const Landing = () =>{
           <Box
              position='relative'
              top='-96rem'
-             left='50rem'
-             zIndex='-1'
+             left='70rem'
+             zIndex='1'
+           
 >
           
-           <GifPlayer gif={main} still={main} />
+           <img src={main}   width='650rem' />
           </Box>
         </Box>
 
