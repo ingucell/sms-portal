@@ -4,6 +4,7 @@ import BarChart from "../../components/Charts/BarChart";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import PageHeadings from "../../components/pageHeadings";
 import PieChart from "../../components/Charts/PieChart";
+import LineChart from '../../components/Charts/LineChart'
 
 const SMS = () => {
   const theme = useTheme();
@@ -43,7 +44,7 @@ const SMS = () => {
             Recent SMS Campaings
           </Typography>
 
-          <PieChart />
+          <LineChart />
         
         </Box>
         {/* BarChart */}

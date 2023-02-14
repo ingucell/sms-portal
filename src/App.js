@@ -5,6 +5,7 @@ import Topbar from './pages/global/Topbar'
 import Landing from "./pages/Landing";
 import Dashboard from "./pages/Dashboard";
 import CreateMessage from './pages/Messages/createMessages'
+import ViewMessages from "./pages/Messages/viewMessages";
 import Voice from "./pages/Voice";
 import SMS from "./pages/SMS";
 import {Routes, Route } from 'react-router-dom'
@@ -28,6 +29,7 @@ function App() {
                                 <Route path="/dashboard" element={<Dashboard />}/>
                                 <Route path="/voice" element={<Voice />}/>
                                 <Route path="/createmessage" element={<CreateMessage />}/>
+                                <Route path="/viewmessage" element={<ViewMessages />}/>
                               </Routes>
                     </main>
                     </div>

@@ -1,5 +1,163 @@
 import { tokens } from "../theme";
 
+
+//Messages Data
+export const mockContacts = [
+  {
+    id: 1,
+  messageTitle: 'Cook Ventures',
+  messageContent: 'Mathias Cook',
+  actions: {
+    delete: 'delete',
+    // add note and change status key value pairs....
+}
+},
+  {
+    id: 2,
+  messageTitle: 'Cook Ventures',
+  messageContent: 'Mathias Cook',
+  actions: {
+    delete: 'delete',
+    // add note and change status key value pairs....
+}
+},
+  {
+    id: 3,
+  messageTitle: 'Cook Ventures',
+  messageContent: 'Mathias Cook',
+  actions: {
+    delete: 'delete',
+    // add note and change status key value pairs....
+}
+}
+]
+
+
+
+
+// Appointments Data
+export const mockDataAppointments = [
+  {
+    id: 1,
+    businessName: 'Cook Ventures',
+    name: 'Mathias Cook',
+    email: 'mathialawson70@gmail.com',
+    date: '2023-03-12',
+    time: '12:00 - 15:00',
+    phone: '+233559690060',
+    status: 'Pending',
+    actions: {
+        delete: 'delete',
+        // add note and change status key value pairs....
+    }
+  },
+  {
+    id: 2,
+    businessName: 'Vaein Ventures',
+    name: 'Lawson Cook',
+    email: 'malawson@gmail.com',
+    date: '2023-03-12',
+    time: '12:00 - 15:00',
+    phone: '+233559690060',
+    status: 'Completed',
+    actions: {
+        delete: 'delete',
+        // add note and change status key value pairs....
+    }
+  },
+  {
+    id: 3,
+    businessName: 'Vaein Ventures',
+    name: 'Lawson Cook',
+    email: 'malawson@gmail.com',
+    date: '2023-03-12',
+    time: '12:00 - 15:00',
+    phone: '+233559690060',
+    status: 'Cancled',
+    actions: {
+        delete: 'delete',
+        // add note and change status key value pairs....
+    }
+  },
+  {
+    id: 4,
+    businessName: 'Vaein Ventures',
+    name: 'Lawson Cook',
+    email: 'malawson@gmail.com',
+    date: '2023-03-12',
+    time: '12:00 - 15:00',
+    phone: '+233559690060',
+    status: 'Completed',
+    actions: {
+        delete: 'delete',
+        // add note and change status key value pairs....
+    }
+  },
+  {
+    id: 5,
+    businessName: 'Vaein Ventures',
+    name: 'Lawson Cook',
+    email: 'malawson@gmail.com',
+    date: '2023-03-12',
+    time: '12:00 - 15:00',
+    phone: '+233559690060',
+    status: 'Completed',
+    actions: {
+        delete: 'delete',
+        // add note and change status key value pairs....
+    }
+  },
+]
+
+// Business Data
+export const mockDataBusinesses = [
+  {
+    id: 1, 
+    businessid: 11,
+    name: 'Mathias Lawson',
+    operations: {
+        dashboard: 'dashboard',
+        contacts: 'contacts',
+        calendar: 'calendar',
+        delete: 'delete',
+    }
+  },
+  {
+    id: 2, 
+    businessid: 11,
+    name: 'Mawulawoe Lawson',
+    operations: {
+        dashboard: 'dashboard',
+        contacts: 'contacts',
+        calendar: 'calendar',
+        delete: 'delete',
+    }
+  },
+  {
+    id: 3, 
+    businessid: 11,
+    name: 'Elizabeth Lawson',
+    operations: {
+        dashboard: 'dashboard',
+        contacts: 'contacts',
+        calendar: 'calendar',
+        delete: 'delete',
+    }
+  },
+  {
+    id: 4, 
+    businessid: 11,
+    name: 'James Lawson',
+    operations: {
+        dashboard: 'dashboard',
+        contacts: 'contacts',
+        calendar: 'calendar',
+        delete: 'delete',
+    }
+  },
+  
+]
+
 export const mockDataTeam = [
   {
     id: 1,
@@ -433,7 +591,7 @@ export const mockPieData = [
 export const mockLineData = [
   {
     id: "japan",
-    color: tokens("dark").black[500],
+    color: tokens("dark").green[500],
     data: [
       {
         x: "plane",
@@ -487,7 +645,7 @@ export const mockLineData = [
   },
   {
     id: "france",
-    color: tokens("dark").blueAccent[300],
+    color: tokens("dark").black[300],
     data: [
       {
         x: "plane",
@@ -541,7 +699,7 @@ export const mockLineData = [
   },
   {
     id: "us",
-    color: tokens("dark").black[200],
+    color: tokens("dark").green[200],
     data: [
       {
         x: "plane",

@@ -14,7 +14,7 @@ const PageHeadings = ({ title, subtitle }) => {
         fontWeight="bolder"
         width='max-content'
         sx={{ m: "0px 0px" , 
-      fontSize: '4rem'}}
+      fontSize: '2rem'}}
       >
         {title}
       </Typography>
