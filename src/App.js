@@ -9,6 +9,7 @@ import ViewMessages from "./pages/Messages/viewMessages";
 import Voice from "./pages/Voice";
 import SMS from "./pages/SMS";
 import Groups from "./pages/Groups/Groups";
+import CreateGroups from "./pages/Groups/CreateGroups";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
                                 <Route path="/createmessage" element={<CreateMessage />}/>
                                 <Route path="/viewmessage" element={<ViewMessages />}/>
                                 <Route path="/groups" element={<Groups />}/>
+                                <Route path="/creategroups" element={<CreateGroups />}/>
                               </Routes>
                     </main>
                     </div>
