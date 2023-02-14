@@ -17,7 +17,7 @@ const CreateGroups = () => {
     <Box m='25px'>
 
     <Box display="flex" justifyContent="space-between" alignItems="center">
-        <PageHeadings title="Create Messages" subtitle="Create all your messages here!" />
+        <PageHeadings title="Create Groups" subtitle="Create all your groups here!" />
 
       </Box>
 
