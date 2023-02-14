@@ -33,6 +33,15 @@ export const mockContacts = [
 ]
 
 
+// Contact Listings
+export const GroupListings = [
+  {
+    id: 1 ,
+    name: "mathias Lawson",
+    mobile: "0559690060"
+  }
+]
+
 
 
 // Appointments Data

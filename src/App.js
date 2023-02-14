@@ -10,6 +10,7 @@ import Voice from "./pages/Voice";
 import SMS from "./pages/SMS";
 import Groups from "./pages/Groups/Groups";
 import CreateGroups from "./pages/Groups/CreateGroups";
+import ContactList from "./pages/Contacts/ContactList";
 import NewContact from "./pages/Contacts/NewContact";
 import {Routes, Route } from 'react-router-dom'
 
@@ -36,6 +37,7 @@ function App() {
                                 <Route path="/groups" element={<Groups />}/>
                                 <Route path="/creategroups" element={<CreateGroups />}/>
                                 <Route path="/newcontact" element={<NewContact />}/>
+                                <Route path="/contactlist" element={<ContactList />}/>
                               </Routes>
                     </main>
                     </div>
