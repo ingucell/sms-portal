@@ -26,7 +26,7 @@ const CreateMessages = () => {
 
       </Box>
 
-<Container maxWidth="sm" style={{ boxShadow: '0px 0px 7px #a7eacf', padding: '2em', marginTop: '5rem' }}>
+<Container maxWidth="sm" style={{ boxShadow: '0px 0px 7px #a7eacf', padding: '2em', marginTop: '4rem' }}>
       <TextField
         label="Message Title"
         value={topInputValue}
