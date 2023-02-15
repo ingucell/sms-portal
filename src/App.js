@@ -12,6 +12,7 @@ import Groups from "./pages/Groups/Groups";
 import CreateGroups from "./pages/Groups/CreateGroups";
 import ContactList from "./pages/Contacts/ContactList";
 import NewContact from "./pages/Contacts/NewContact";
+import GroupMessaging from "./pages/SendMessage/GroupMessaging";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
                                 <Route path="/creategroups" element={<CreateGroups />}/>
                                 <Route path="/newcontact" element={<NewContact />}/>
                                 <Route path="/contactlist" element={<ContactList />}/>
+                                <Route path="/groupmessaging" element={<GroupMessaging />}/>
                               </Routes>
                     </main>
                     </div>

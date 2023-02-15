@@ -195,13 +195,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-
+{/* 
            <Item
               title="Export Contacts"
               to="/exportcontacts"
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
             </SubMenu>
 
 
@@ -318,11 +318,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             
-            
              </SubMenu>
-
-
-    
             <Item
               title="Help"
               to="/help"

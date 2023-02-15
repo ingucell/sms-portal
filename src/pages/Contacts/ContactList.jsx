@@ -54,8 +54,8 @@ const ContactList = () => {
   return (
     <Box m="20px">
       <PageHeadings
-        title="Group Listings"
-        subtitle="View your groups listing here!"
+        title="Contact Listings"
+        subtitle="View your contact listing here!"
       />
       <Box
         m="15px 0 0 0"
