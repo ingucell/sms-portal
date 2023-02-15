@@ -78,7 +78,11 @@ export default function GroupMessaging() {
 
 
   return (
+
+
     <Box m='25px'>
+  <PageHeadings title="Group Messaging" subtitle="Send your group messages here!"/>
+
             <Box
     m="15px 0 0 0"
     height="25vh"

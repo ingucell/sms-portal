@@ -46,6 +46,7 @@ const CreateMessages = () => {
         onChange={handleBottomInputChange}
         fullWidth
         multiline
+        rows='10'
         margin="normal"
         variant="outlined"
         inputProps={{ maxLength: 160 }}
