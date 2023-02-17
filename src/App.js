@@ -14,6 +14,9 @@ import ContactList from "./pages/Contacts/ContactList";
 import NewContact from "./pages/Contacts/NewContact";
 import GroupMessaging from "./pages/SendMessage/GroupMessaging";
 import QuickSms from "./pages/SendMessage/QuickSms";
+import RegisterSenderID from "./pages/SendMessage/RegisterSenderID";
+import SenderIdList from "./pages/SendMessage/SenderIdList";
+import Scheduled from "./pages/SendMessage/Scheduled";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -42,6 +45,9 @@ function App() {
                                 <Route path="/contactlist" element={<ContactList />}/>
                                 <Route path="/groupmessaging" element={<GroupMessaging />}/>
                                 <Route path="/quicksms" element={<QuickSms />}/>
+                                <Route path="/registersendid" element={<RegisterSenderID />}/>
+                                <Route path="/senderidlist" element={<SenderIdList />}/>
+                                <Route path="/scheduled" element={<Scheduled />}/>
                               </Routes>
                     </main>
                     </div>
