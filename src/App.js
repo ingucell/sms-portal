@@ -17,6 +17,14 @@ import QuickSms from "./pages/SendMessage/QuickSms";
 import RegisterSenderID from "./pages/SendMessage/RegisterSenderID";
 import SenderIdList from "./pages/SendMessage/SenderIdList";
 import Scheduled from "./pages/SendMessage/Scheduled";
+import GraphicalReport from "./pages/Stats&Reporting/GraphicalReport";
+import MessageType from "./pages/Stats&Reporting/MessageType";
+import SenderName from "./pages/Stats&Reporting/SenderName";
+import SmsSent from "./pages/Stats&Reporting/SmsSent";
+import Campaigns from "./pages/Stats&Reporting/Campaigns";
+import TopUpHistory from "./pages/Stats&Reporting/TopUpHistory";
+import Payments from "./pages/Stats&Reporting/Payments";
+import DevliveryReports from "./pages/Stats&Reporting/DeliveryReports";
 import {Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -48,6 +56,14 @@ function App() {
                                 <Route path="/registersendid" element={<RegisterSenderID />}/>
                                 <Route path="/senderidlist" element={<SenderIdList />}/>
                                 <Route path="/scheduled" element={<Scheduled />}/>
+                                <Route path="/graphicalreport" element={<GraphicalReport />}/>
+                                <Route path="/messagetypesent" element={<MessageType />}/>
+                                <Route path="/sendername" element={<SenderName />}/>
+                                <Route path="/smssent" element={<SmsSent />}/>
+                                <Route path="/campaigns" element={<Campaigns />}/>
+                                <Route path="/touphistory" element={<TopUpHistory />}/>
+                                <Route path="/payment" element={<Payments />}/>
+                                <Route path="/deliveryreports" element={<DevliveryReports />}/>
                               </Routes>
                     </main>
                     </div>

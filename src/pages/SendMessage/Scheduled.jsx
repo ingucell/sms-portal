@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockContacts } from "../../data/mockData";
+import { GroupListings, mockContacts } from "../../data/mockData";
 import PageHeadings from "../../components/pageHeadings";
 import { useTheme } from "@mui/material";
 import DeleteForeverOutlinedIcon from '@mui/icons-material/DeleteForeverOutlined';
@@ -13,14 +13,14 @@ const Scheduled = () => {
 
   const columns = [
     {
-      field: "messageTitle",
-      headerName: "Message Title",
+      field: "name",
+      headerName: "Name",
       flex: 0.8,
       cellClassName: "name-column--cell",
     },
     {
-      field: "messageContent",
-      headerName: "Message Content",
+      field: "mobile",
+      headerName: "Mobile",
       flex: 1,
       cellClassName: "name-column--cell",
     },
@@ -36,8 +36,7 @@ const Scheduled = () => {
           m="3px 0px"
           p="5px"
           display="flex"
-          justifyContent="center"
-          
+          justifyContent="center"        
           borderRadius="4px"
         >
           {<DeleteForeverOutlinedIcon style={{color: 'red', cursor: 'pointer', marginLeft: '0.5rem'}}/>}
@@ -55,8 +54,8 @@ const Scheduled = () => {
   return (
     <Box m="20px">
       <PageHeadings
-        title="Sender ID List"
-        subtitle="View Sender ID List here!"
+        title="Contact Listings"
+        subtitle="View your contact listing here!"
       />
       <Box
         m="15px 0 0 0"
@@ -96,7 +95,7 @@ const Scheduled = () => {
         }}
       >
         <DataGrid
-          rows={mockContacts}
+          rows={GroupListings}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
         />
